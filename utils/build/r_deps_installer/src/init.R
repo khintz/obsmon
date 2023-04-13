@@ -38,7 +38,7 @@ INSTALLER_OWN_INSTALL_LIB <- file.path(
     .libPaths(c(INSTALLER_OWN_INSTALL_LIB, .libPaths()))
     install.packages(
       pkg, lib=INSTALLER_OWN_INSTALL_LIB, quiet=FALSE,
-      repos="https://CRAN.R-project.org"
+      repos="http://CRAN.R-project.org"
     )
   }
 }

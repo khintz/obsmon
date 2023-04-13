@@ -292,7 +292,7 @@ if(("repos" %in% names(args)) || args$command == "create-local-repo") {
     # if present. The CRAN url used here performs automatic redirection to
     # servers worldwide.
     repos <- getOption("repos")
-    repos["CRAN"] <- "https://CRAN.R-project.org"
+    repos["CRAN"] <- "http://CRAN.R-project.org"
     local_repo_path <- file.path(getwd(), ".installer_local_pkg_repo")
     if(args$command != "create-local-repo") {
       if (file.exists(file.path(local_repo_path, "src", "contrib", "PACKAGES"))) {
@@ -307,7 +307,7 @@ if(("repos" %in% names(args)) || args$command == "create-local-repo") {
   } else {
     .validateRepos <- Vectorize(function(repo) {
       if(tolower(repo) == "cran") {
-          repo <- "https://CRAN.R-project.org"
+          repo <- "http://CRAN.R-project.org"
       } else if(startsWith(repo, "file:")) {
         repo <- paste0(
           "file:",
