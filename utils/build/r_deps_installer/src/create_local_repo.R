@@ -1,5 +1,5 @@
 createLocalRepo <- function(pkgsDf, destdir, onlyMetadata=FALSE) {
-  repos <- c(CRAN="https://cloud.r-project.org")
+  repos <- c(CRAN="https://CRAN.R-project.org")
   srcDir <- file.path(destdir, "src", "contrib")
   pkgsDf <- pkgsDf[order(pkgsDf$Package),]
   unlink(srcDir, recursive=TRUE)
