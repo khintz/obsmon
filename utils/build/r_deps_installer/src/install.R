@@ -86,7 +86,7 @@ getPathToBinary <- function(pkgName, pkgVersion, binDirs) {
 .download_pkg_source <- Vectorize(function(
     package,
     version,
-    repos=c(CRAN="https://cloud.r-project.org"),
+    repos=c(CRAN="https://CRAN.R-project.org"),
     dest_dir=getwd(),
     ...
 ) {
