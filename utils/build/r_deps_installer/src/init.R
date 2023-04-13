@@ -37,8 +37,8 @@ INSTALLER_OWN_INSTALL_LIB <- file.path(
     dir.create(INSTALLER_OWN_INSTALL_LIB, recursive=TRUE, showWarnings=FALSE)
     .libPaths(c(INSTALLER_OWN_INSTALL_LIB, .libPaths()))
     install.packages(
-      pkg, lib=INSTALLER_OWN_INSTALL_LIB, quiet=TRUE,
-      repos="https://cloud.r-project.org"
+      pkg, lib=INSTALLER_OWN_INSTALL_LIB, quiet=FALSE,
+      repos="https://CRAN.R-project.org"
     )
   }
 }

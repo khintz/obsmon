@@ -10,3 +10,5 @@ tryCatch(
   error=function(e) NULL,
   warning=function(w) NULL
 )
+
+options(repos='https://CRAN.R-project.org')

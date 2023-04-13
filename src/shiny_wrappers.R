@@ -2,7 +2,7 @@ runAppHandlingBusyPort <- function(
   # Wrapper to shiny's runApp
   appDir=getwd(), defaultPort=getOption("shiny.port"),
   launch.browser=getOption("shiny.launch.browser", interactive()),
-  host = getOption("shiny.host", "127.0.0.1"),
+  host = getOption("shiny.host", "0.0.0.0"),
   maxNAtt=10,
   ...
 ) {
