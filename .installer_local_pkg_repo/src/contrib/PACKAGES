@@ -206,7 +206,7 @@ MD5sum: 474d4e31514d17fc48c1673f6ad3392c
 NeedsCompilation: yes
 
 Package: class
-Version: 7.3-20
+Version: 7.3-22
 Priority: recommended
 Depends: R (>= 3.0.0), stats, utils
 Imports: MASS
